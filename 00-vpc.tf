@@ -29,11 +29,6 @@ resource "aws_route_table" "public_route_table" {
     gateway_id = "local"
   }
 
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.defaultIGW.id
-  }
-
   tags = {
     Name = "Public Route Table"
   }
