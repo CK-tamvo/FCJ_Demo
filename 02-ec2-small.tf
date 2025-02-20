@@ -1,7 +1,7 @@
 resource "aws_instance" "small_ec2" {
 
   ami                         = var.ec2_ami
-  instance_type               = "t2.small"
+  instance_type               = "t2.medium"
   monitoring                  = true
   subnet_id                   = values(aws_subnet.public_subnets)[0].id
   vpc_security_group_ids      = [aws_security_group.security_group.id]
