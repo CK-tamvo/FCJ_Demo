@@ -1,6 +1,6 @@
 terraform {  
   cloud {
-    organization = "learn_pipeline"
+    organization = "fcj_demo_2025"
 
     workspaces {
       name = "fcj_demo"
