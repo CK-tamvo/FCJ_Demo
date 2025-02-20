@@ -10,7 +10,7 @@ resource "aws_instance" "small_ec2" {
   tags = {
     Terraform   = "true"
     Environment = "dev"
-    Name        = "EC2 Small Server"
+    Name        = "EC2 Medium Server"
   }
 
   root_block_device {
