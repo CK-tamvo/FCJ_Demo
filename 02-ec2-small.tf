@@ -7,11 +7,11 @@ resource "aws_instance" "small_ec2" {
   vpc_security_group_ids      = [aws_security_group.security_group.id]
   associate_public_ip_address = true
 
-  tags = {
-    Terraform   = "true"
-    Environment = "dev"
-    Name        = "EC2 Small Server"
-  }
+#   tags = {
+#     Terraform   = "true"
+#     Environment = "dev"
+#     Name        = "EC2 Small Server"
+#   }
 
   root_block_device {
     volume_size = 30
